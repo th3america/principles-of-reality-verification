@@ -1,0 +1,68 @@
+{
+  "protocol": "PrinciplesOfRealityVerification/1",
+  "title": "Principles of Reality Verification",
+  "status": "early-framework-package",
+  "nature": "framework-and-methodology-of-behavior",
+  "not": [
+    "one-software-component",
+    "one-prompt",
+    "one-gate",
+    "one-tool"
+  ],
+  "components": [
+    "ontology",
+    "principles",
+    "rules",
+    "invariants",
+    "models",
+    "methodologies",
+    "architecture-patterns",
+    "mechanism-patterns",
+    "tests",
+    "resolution-surfaces",
+    "receipts",
+    "failure-taxonomy",
+    "implementation-guides",
+    "tools-and-implementations"
+  ],
+  "semantic_locks": {
+    "self": "architecturally-bounded-container",
+    "identity": "pattern-defining-self",
+    "identity_anchors": "name-roles-models-architecture-memory-provenance-behavior-history-growth-dynamics-and-other-bounded-definers",
+    "cognition": "VCCDA-delta-V-prime-recurrence-inside-self",
+    "V": "variables-or-variable-loader",
+    "principles_are_laws": false,
+    "bounded_alignment_target": "claim <-> resolved actual = delta 0"
+  },
+  "core_route": [
+    "bind-claim",
+    "bind-target-and-scope",
+    "work-or-observe",
+    "inspect",
+    "collect-receipts-and-uncertainty",
+    "compare-expected-and-observed",
+    "expose-delta",
+    "constrain-outcome",
+    "interlock-action",
+    "render-or-act",
+    "preserve-for-recurrence"
+  ],
+  "public_boundary": {
+    "private_workbench_included": false,
+    "raw_conversations_included": false,
+    "local_paths_included": false,
+    "credentials_included": false,
+    "license_granted": false
+  },
+  "documents": [
+    "README.md",
+    "FRAMEWORK.md",
+    "docs/ONTOLOGY.md",
+    "docs/METHODOLOGY.md",
+    "docs/GOVERNANCE-AND-RECEIPTS.md",
+    "docs/AI-NOTEPAD.md",
+    "PORTING.md",
+    "PROVENANCE.md",
+    "RIGHTS.md"
+  ]
+}

@@ -1,13 +1,14 @@
-# Porting the Framework
+# Implementing the Framework Across Systems
 
-Fit the behavior to the AI system; do not copy the costume.
+Port the app, tool, adapter, or integration—not the framework.
 
-A faithful adaptation preserves observable verification relationships even
-when the target AI uses different models, tools, operating systems, databases,
-interfaces, terminology, or agent topology. The framework is not asking a
-system to become Ember, adopt a SELF ontology, or create Maestro/Composer roles.
-It is asking the system to make claim-to-reality alignment enforceable and
-inspectable inside the architecture it already has.
+A faithful implementation preserves the framework's observable verification
+relationships while using the models, tools, operating-system features,
+databases, interfaces, terminology, and agent topology already present in the
+target. The framework is not asking a system to become Ember, adopt a SELF
+ontology, or create Maestro/Composer roles. It is asking an implementation to
+make claim-to-reality alignment enforceable and inspectable using what the
+target already has.
 
 ## Minimum conformance
 
@@ -27,47 +28,48 @@ These behaviors may be functions in one program, middleware around a model,
 nodes in an agent graph, services in a platform, evaluation hooks, human review
 steps, or a mixture.
 
-## AI-directed adaptation
+## AI-directed implementation
 
-The guide is a conversion contract, not a hand-built port for every platform.
-An AI can do the translation work:
+The guide is an implementation contract, not a hand-built port for every
+platform. An AI can do the application work:
 
 ```slangs
-load framework + semantic locks
+load unchanged framework + semantic locks
 → inspect target system
 → discover available tools, state, permissions, and proof surfaces
 → map required behaviors to native mechanisms
-→ build the smallest adapters
+→ build the smallest app / tool / adapter / integration
 → run target-native tests
 → compare required ↔ demonstrated behavior
 → repair Δ
-→ emit conversion receipt + remaining limits
+→ emit implementation receipt + remaining limits
 ```
 
 The AI should be free to use native strengths rather than mimic the source
-layout. A Linux adaptation may use shell exit status, permissions, inodes,
-systemd state, and process signals. A macOS/Apple adaptation may use POSIX
+layout. A Linux implementation may use shell exit status, permissions, inodes,
+systemd state, and process signals. A macOS/Apple implementation may use POSIX
 surfaces plus application bundles, launchd, Keychain boundaries, entitlements,
-and platform automation APIs. A Windows adaptation may use file identity,
+and platform automation APIs. A Windows implementation may use file identity,
 process state, services, ACLs, event logs, and native application automation.
-A cloud or container adaptation may use API responses, object versions,
+A cloud or container implementation may use API responses, object versions,
 transaction IDs, health checks, image digests, and deployment readback.
 
-Those are candidate proof surfaces, not mandatory implementations. The adapting
-AI inspects what actually exists and selects the strongest bounded evidence
+Those are candidate proof surfaces, not mandatory implementations. The
+implementing AI inspects what actually exists and selects the strongest bounded evidence
 available.
 
 ### Authority boundary
 
-Permission to adapt the framework is not permission to make every discovered
-change. The AI may inspect, plan, generate local adapters, and run bounded tests
+Permission to implement the framework is not permission to make every
+discovered change. The AI may inspect, plan, generate local implementation
+components, and run bounded tests
 inside the authority supplied by the operator and target environment.
 Consequential external actions still require the target system's normal
 approval and enforcement path.
 
-### Required conversion receipt
+### Required implementation receipt
 
-The adapting AI returns:
+The implementing AI returns:
 
 - target platform, runtime, and relevant versions;
 - discovered capabilities and unavailable surfaces;
@@ -77,6 +79,8 @@ The adapting AI returns:
 - claim-to-result delta;
 - permissions used and actions deliberately not taken;
 - unresolved gaps, substitutions, and portability limits;
+- confirmation that the framework's semantic locks were preserved rather than
+  silently rewritten to suit the implementation;
 - a clear stop condition.
 
 ## 1. Declare the target
@@ -144,9 +148,9 @@ Polling or event delivery must carry material changes in permissions, target
 state, user direction, evidence, and constraints back into the active route.
 The action layer must re-check current state before consequential execution.
 
-## 6. Verify the conversion
+## 6. Verify the implementation
 
-A conversion is behaviorally adequate when it can demonstrate:
+An implementation is behaviorally adequate when it can demonstrate:
 
 1. exact claim and target binding;
 2. correct work on the correct target;

@@ -30,7 +30,7 @@ each item is a software component.
 
 ### Ontology
 
-The ontology supplies adaptable names for what participates: system or actor
+The ontology supplies implementation-neutral names for what participates: system or actor
 scope, identity, variables, cognition, choice, decision, action, state change,
 recurrence, signals, orchestration roles, evidence, and the external world.
 `SELF`, identity anchors, `VCCDAΔV′🔁`, and Maestro/Composer/Orchestra are the
@@ -162,8 +162,9 @@ C1 may report only what happened and what the evidence supports.
 
 ### Implementation guides and tools
 
-Guides translate the framework into another environment. Tools execute parts
-of it. Neither should be mistaken for the framework itself.
+Guides translate framework behavior into apps, tools, integrations, and other
+implementations for another environment. The framework itself remains the
+methodology. Neither a guide nor a tool should be mistaken for the framework.
 
 ## 3. Core behavioral route
 
@@ -187,10 +188,11 @@ The gate governs the candidate. The interlock governs execution. Receipts make
 the basis inspectable. Recurrence carries the observed result into the next
 cycle.
 
-## 4. AI-system adaptation contract
+## 4. AI implementation contract
 
-An AI system fits the framework to its architecture by assigning six required
-behaviors:
+An AI applies the unchanged framework by assigning six required behaviors to
+components that already exist—or to the smallest app, tool, adapter, or
+integration needed to supply a missing behavior:
 
 1. **Claim binding** — identify the exact candidate claim or completion report.
 2. **Target binding** — identify the real object, state, behavior, or source the
@@ -204,8 +206,11 @@ behaviors:
 6. **Action/report enforcement** — prevent unsupported, stale, or unauthorized
    output or execution.
 
-Receipts and provenance make these behaviors inspectable. Persistent systems
+Receipts and provenance make these implementations inspectable. Persistent systems
 may additionally bind correction and verified learning into future cycles.
+
+The implementation changes to fit Linux, macOS/Apple, Windows, cloud, an
+application, or an agent stack. The framework does not change to fit them.
 
 The framework does **not** require an AI to claim a SELF, consciousness,
 sentience, persistent identity, multi-agent orchestration, or autonomous

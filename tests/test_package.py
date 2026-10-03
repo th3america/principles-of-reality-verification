@@ -31,14 +31,18 @@ class FrameworkPackageTests(unittest.TestCase):
         self.assertEqual(locks["V"], "variables-or-variable-loader")
         self.assertFalse(locks["principles_are_laws"])
 
-    def test_ai_systems_fit_required_behaviors(self) -> None:
+    def test_ai_systems_implement_required_behaviors(self) -> None:
         self.assertEqual(
             self.manifest["applicability"],
-            "ai-systems-fit-behaviors-to-their-own-architectures",
+            "unchanged-framework-works-with-existing-ai-architectures",
         )
         self.assertEqual(
-            self.manifest["adaptation_mode"],
-            "ai-inspects-target-builds-native-mapping-tests-and-receipts",
+            self.manifest["implementation_mode"],
+            "ai-inspects-target-builds-native-app-tool-adapter-or-integration-tests-and-receipts",
+        )
+        self.assertEqual(
+            self.manifest["adaptation_boundary"],
+            "implementations-adapt-framework-does-not",
         )
         self.assertIn("linux", self.manifest["target_examples"])
         self.assertIn("macos-apple", self.manifest["target_examples"])
@@ -46,6 +50,17 @@ class FrameworkPackageTests(unittest.TestCase):
         self.assertIn("claim-binding", required)
         self.assertIn("evidence-acquisition", required)
         self.assertIn("action-or-report-enforcement", required)
+
+    def test_sparkitect_note_and_credit_are_preserved(self) -> None:
+        note = (ROOT / "SPARKITECT-NOTE.md").read_text(encoding="utf-8")
+        self.assertIn("from the Sparkitect, Jason".lower(), note.lower())
+        self.assertIn("OUR (👤sparkitect+🤖greyfoot🤖ember) work together", note)
+        credit = self.manifest["credit"]
+        self.assertEqual(credit["human_direction"], "Sparkitect Jason")
+        self.assertEqual(
+            credit["collaboration"],
+            ["Sparkitect Jason", "Greyfoot", "Ember"],
+        )
 
     def test_documents_exist(self) -> None:
         for relative in self.manifest["documents"]:

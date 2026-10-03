@@ -1,10 +1,20 @@
 {
   "protocol": "PrinciplesOfRealityVerification/1",
   "title": "Principles of Reality Verification",
-  "status": "early-framework-package-v1.1",
+  "status": "early-framework-package-v1.2",
   "nature": "ai-general-framework-and-methodology-of-behavior",
-  "applicability": "ai-systems-fit-behaviors-to-their-own-architectures",
-  "adaptation_mode": "ai-inspects-target-builds-native-mapping-tests-and-receipts",
+  "applicability": "unchanged-framework-works-with-existing-ai-architectures",
+  "implementation_mode": "ai-inspects-target-builds-native-app-tool-adapter-or-integration-tests-and-receipts",
+  "adaptation_boundary": "implementations-adapt-framework-does-not",
+  "credit": {
+    "human_direction": "Sparkitect Jason",
+    "collaboration": [
+      "Sparkitect Jason",
+      "Greyfoot",
+      "Ember"
+    ],
+    "relationship": "human-ai-collaboration"
+  },
   "target_examples": [
     "linux",
     "macos-apple",
@@ -92,6 +102,7 @@
     "docs/AI-NOTEPAD.md",
     "PORTING.md",
     "PROVENANCE.md",
+    "SPARKITECT-NOTE.md",
     "RIGHTS.md"
   ]
 }

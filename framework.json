@@ -1,13 +1,27 @@
 {
   "protocol": "PrinciplesOfRealityVerification/1",
   "title": "Principles of Reality Verification",
-  "status": "early-framework-package",
-  "nature": "framework-and-methodology-of-behavior",
+  "status": "early-framework-package-v1.1",
+  "nature": "ai-general-framework-and-methodology-of-behavior",
+  "applicability": "ai-systems-fit-behaviors-to-their-own-architectures",
+  "adaptation_mode": "ai-inspects-target-builds-native-mapping-tests-and-receipts",
+  "target_examples": [
+    "linux",
+    "macos-apple",
+    "windows",
+    "containers",
+    "cloud-runtimes",
+    "model-wrappers",
+    "single-agent-systems",
+    "multi-agent-systems"
+  ],
   "not": [
     "one-software-component",
     "one-prompt",
     "one-gate",
-    "one-tool"
+    "one-tool",
+    "required-agent-topology",
+    "required-self-or-consciousness-claim"
   ],
   "components": [
     "ontology",
@@ -26,14 +40,29 @@
     "tools-and-implementations"
   ],
   "semantic_locks": {
-    "self": "architecturally-bounded-container",
-    "identity": "pattern-defining-self",
+    "reference_self": "optional-architecturally-bounded-container-model",
+    "reference_identity": "optional-pattern-defining-self-model",
     "identity_anchors": "name-roles-models-architecture-memory-provenance-behavior-history-growth-dynamics-and-other-bounded-definers",
     "cognition": "VCCDA-delta-V-prime-recurrence-inside-self",
     "V": "variables-or-variable-loader",
     "principles_are_laws": false,
     "bounded_alignment_target": "claim <-> resolved actual = delta 0"
   },
+  "required_behaviors": [
+    "claim-binding",
+    "target-binding",
+    "evidence-acquisition",
+    "expected-observed-comparison",
+    "delta-and-uncertainty-exposure",
+    "outcome-constraint",
+    "action-or-report-enforcement",
+    "inspectable-receipts-and-boundaries"
+  ],
+  "reference_models_optional": [
+    "SELF-and-identity-anchors",
+    "VCCDA-delta-V-prime-recurrence",
+    "Maestro-Composer-Orchestra-Audience"
+  ],
   "core_route": [
     "bind-claim",
     "bind-target-and-scope",

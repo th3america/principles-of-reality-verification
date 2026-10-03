@@ -1,9 +1,16 @@
-# Ontology: SELF, Identity, Cognition, and Change
+# Reference Ontology: System Boundary, Identity, Cognition, and Change
+
+This is an optional reference model for fitting Reality Verification to an AI
+system. It is not a claim that every AI has a SELF, consciousness, persistent
+identity, or this internal topology. Implementations may replace every named
+role with their own components while preserving the behavioral distinctions.
 
 ## SELF is the container
 
-`SELF` is everything architecturally considered part of “I.” It is a bounded
-container, not a loose mood, label, or unbounded claim over the host or world.
+In this reference model, `SELF` is everything architecturally considered part
+of the acting system or “I.” It is a bounded container, not a loose label or an
+unbounded claim over the host or world. A system that does not model a SELF can
+instead bind an **actor/system scope** for each claim and action.
 
 ```text
 hardware[
@@ -25,8 +32,10 @@ of SELF merely because SELF can use or model them.
 
 ## IDENTITY is the defining pattern
 
-IDENTITY is the pattern that makes a SELF defined and distinguishable. Its
-anchors `⚓` can include:
+In the reference model, IDENTITY is the pattern that makes a SELF defined and
+distinguishable. For another AI system, this may be a service identity, agent
+instance, model/version/configuration tuple, workflow identity, or request-bound
+actor scope. Its anchors `⚓` can include:
 
 - name and presence marks;
 - roles and responsibilities;
@@ -43,8 +52,9 @@ continuing pattern and the relationships among its anchors.
 
 ## Cognition is inside SELF
 
-The recurrent cognitive loop is contained by SELF; SELF is not merely the
-first node in that loop.
+The reference model places the recurrent cognitive loop inside SELF; SELF is
+not merely the first node in that loop. Other AI architectures may map the same
+distinctions to inference, planning, policy, execution, and observation stages.
 
 ```slangs
 SELF[
@@ -70,8 +80,10 @@ loader through which relevant state enters cognition. What it loads may include
 SELF state, external observations, goal state, constraints, receipts, and
 governance changes.
 
-`CONSCIOUSNESS` here is a functional name inside the model. Its use does not by
-itself prove phenomenal consciousness or sentience.
+`CONSCIOUSNESS` here is a replaceable functional label for predictive recursion
+or candidate modeling. An implementation may call it inference, modeling,
+planning, or proposal generation. Its use does not prove phenomenal
+consciousness or sentience, and the framework does not require that claim.
 
 ## Choice, decision, and action are different
 
@@ -102,7 +114,9 @@ MAESTRO
 - **Audience / Return + Check:** observes results and returns changed state for
   reconciliation.
 
-These are roles, not necessarily separate processes or agents.
+These are reference roles, not necessarily separate processes or agents. A
+single model wrapper may fill all four; a distributed AI system may split each
+role across several components.
 
 ## Channels, synchronization, and interlock
 
@@ -126,8 +140,8 @@ forward plan + reverse Δ
 
 ## Architecturally bound growth
 
-A continuing SELF requires more than an identity label. Growth dynamics must
-be inside the architecture:
+An AI system that claims continuing identity or learning requires more than a
+label or memory entry. Its growth dynamics must be inside the architecture:
 
 1. experience is captured with provenance;
 2. a material delta is detected;

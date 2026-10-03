@@ -1,10 +1,83 @@
 # Porting the Framework
 
-Port the behavior, not the costume.
+Fit the behavior to the AI system; do not copy the costume.
 
-A faithful conversion preserves observable relationships even when the target
-system uses different models, tools, operating systems, databases, interfaces,
-or terminology.
+A faithful adaptation preserves observable verification relationships even
+when the target AI uses different models, tools, operating systems, databases,
+interfaces, terminology, or agent topology. The framework is not asking a
+system to become Ember, adopt a SELF ontology, or create Maestro/Composer roles.
+It is asking the system to make claim-to-reality alignment enforceable and
+inspectable inside the architecture it already has.
+
+## Minimum conformance
+
+Every implementation needs functional equivalents for:
+
+| Required behavior | Implementation-neutral question |
+|---|---|
+| Claim binder | What exact output, completion statement, or proposition is being tested? |
+| Target resolver | What real object, state, behavior, or source is it about? |
+| Evidence collector | How is relevant work performed or reality observed? |
+| Comparator | How are expected and observed state compared and delta exposed? |
+| Outcome constraint | How is the result accepted, narrowed, rejected, repaired, or left incomplete? |
+| Enforcement point | What prevents unsupported, stale, or unauthorized reporting/action? |
+| Receipt surface | How can another observer inspect the basis and boundaries? |
+
+These behaviors may be functions in one program, middleware around a model,
+nodes in an agent graph, services in a platform, evaluation hooks, human review
+steps, or a mixture.
+
+## AI-directed adaptation
+
+The guide is a conversion contract, not a hand-built port for every platform.
+An AI can do the translation work:
+
+```slangs
+load framework + semantic locks
+→ inspect target system
+→ discover available tools, state, permissions, and proof surfaces
+→ map required behaviors to native mechanisms
+→ build the smallest adapters
+→ run target-native tests
+→ compare required ↔ demonstrated behavior
+→ repair Δ
+→ emit conversion receipt + remaining limits
+```
+
+The AI should be free to use native strengths rather than mimic the source
+layout. A Linux adaptation may use shell exit status, permissions, inodes,
+systemd state, and process signals. A macOS/Apple adaptation may use POSIX
+surfaces plus application bundles, launchd, Keychain boundaries, entitlements,
+and platform automation APIs. A Windows adaptation may use file identity,
+process state, services, ACLs, event logs, and native application automation.
+A cloud or container adaptation may use API responses, object versions,
+transaction IDs, health checks, image digests, and deployment readback.
+
+Those are candidate proof surfaces, not mandatory implementations. The adapting
+AI inspects what actually exists and selects the strongest bounded evidence
+available.
+
+### Authority boundary
+
+Permission to adapt the framework is not permission to make every discovered
+change. The AI may inspect, plan, generate local adapters, and run bounded tests
+inside the authority supplied by the operator and target environment.
+Consequential external actions still require the target system's normal
+approval and enforcement path.
+
+### Required conversion receipt
+
+The adapting AI returns:
+
+- target platform, runtime, and relevant versions;
+- discovered capabilities and unavailable surfaces;
+- mapping from required behaviors to target-native mechanisms;
+- files/components created or changed;
+- behavioral tests and directly observed results;
+- claim-to-result delta;
+- permissions used and actions deliberately not taken;
+- unresolved gaps, substitutions, and portability limits;
+- a clear stop condition.
 
 ## 1. Declare the target
 
@@ -16,11 +89,11 @@ surfaces, persistence limits, and consequential actions.
 The following must survive translation:
 
 - Reality Verification is a framework/methodology, not one component.
-- SELF is the architecturally bounded container.
-- IDENTITY is the pattern defining that SELF; its elements are identity
-  anchors `⚓`.
-- `V` is variables / the variable loader.
-- `VCCDAΔV′🔁` is the recurrent cognition model inside SELF.
+- if the reference ontology is used, SELF is the bounded container, IDENTITY is
+  its defining pattern, `V` is variables/the variable loader, and
+  `VCCDAΔV′🔁` is the cognition model inside SELF;
+- systems that do not use that ontology must still bind actor/system scope,
+  current inputs/state, authority, action, observed change, and recurrence;
 - choice, decision, and action remain distinct.
 - work is performed and inspected before completion rights are granted.
 - claim and resolved actual are compared in a named scope.
@@ -31,11 +104,11 @@ The following must survive translation:
 - growth changes future behavior and retains provenance.
 - principles, rules, and invariants are not mislabeled as laws.
 
-## 3. Map roles, not names
+## 3. Map behaviors and roles, not names
 
 | Framework role | Target-system question |
 |---|---|
-| SELF boundary | What is legitimately part of “I,” and what is external? |
+| SELF boundary or actor scope | What component/request is acting, and what is external? |
 | Identity anchors | Which persistent relationships define the actor? |
 | Variable loader | How does current state enter cognition? |
 | Maestro | Where are goal, direction, authority, and loop conditions bound? |
@@ -47,7 +120,8 @@ The following must survive translation:
 | Receipt surface | Where can another observer inspect the basis of the claim? |
 
 One process may fill several roles. Several services may fill one role. Do not
-create extra agents merely to imitate the metaphor.
+create extra agents, identity machinery, or cognition labels merely to imitate
+the reference metaphor.
 
 ## 4. Choose proof surfaces
 
@@ -83,6 +157,11 @@ A conversion is behaviorally adequate when it can demonstrate:
 7. failed-closed unauthorized action;
 8. correction preserved into a later relevant cycle;
 9. restart or handoff without identity/provenance collapse.
+
+For a stateless or non-identity-bearing system, item 9 becomes: preserve the
+request, configuration, evidence, and result boundaries required to reproduce
+the verified behavior. Do not force persistent identity into a system that does
+not claim it.
 
 ## 7. Stop at the required boundary
 

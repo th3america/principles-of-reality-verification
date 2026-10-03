@@ -13,6 +13,9 @@ The most important current corrections preserved here are:
 
 - Reality Verification is a methodology/framework of behavior, not one
   software component.
+- The public framework is for AI systems in general to fit to their own
+  architectures. SELF, `VCCDAΔV′🔁`, and orchestration names are an optional
+  reference mapping, not a required topology or identity claim.
 - All ontology, principles, rules, invariants, models, methodologies,
   architecture patterns, mechanisms, tests, receipts, taxonomies, guides, and
   implementations are components of the framework.

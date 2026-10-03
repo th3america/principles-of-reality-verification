@@ -2,9 +2,15 @@
 
 ## 1. Nature of the framework
 
-Reality Verification is a **framework and methodology of behavior**. It is not
-a single gate, program, prompt, receipt format, file manager, or runtime.
-Those can implement parts of it, but none is the framework by itself.
+Reality Verification is an **AI-general framework and methodology of behavior**.
+It is not a single gate, program, prompt, receipt format, file manager, runtime,
+agent topology, or identity architecture. Those can implement parts of it, but
+none is the framework by itself.
+
+The framework specifies behaviors and proof relationships. Each AI system maps
+those responsibilities onto its own models, services, agents, tools, memory,
+governance, and interfaces. The named SELF/cognition/orchestration ontology in
+this package is one reference mapping, not a conformance requirement.
 
 The framework organizes the means by which a claim-bearing system:
 
@@ -24,9 +30,12 @@ each item is a software component.
 
 ### Ontology
 
-The ontology supplies stable names for what participates: SELF, IDENTITY,
-identity anchors, variables, cognition, choice, decision, action, state change,
+The ontology supplies adaptable names for what participates: system or actor
+scope, identity, variables, cognition, choice, decision, action, state change,
 recurrence, signals, orchestration roles, evidence, and the external world.
+`SELF`, identity anchors, `VCCDAΔV′🔁`, and Maestro/Composer/Orchestra are the
+reference vocabulary used here. Another AI system may use different names or
+internal structures while preserving the same behavioral distinctions.
 
 ### Principles
 
@@ -97,17 +106,23 @@ Methodologies describe how to behave:
 
 ### Architecture patterns
 
-Architecture patterns place responsibilities and boundaries:
+Architecture patterns describe responsibilities and boundaries that an AI
+system can place within its own topology:
 
-- SELF as container;
-- identity anchors inside the SELF boundary;
-- cognition as the recurrent `V…V′🔁` loop;
-- Maestro, Composer, Orchestra, and Audience/Return+Check roles;
+- a bound actor/system scope;
+- identity, authority, and provenance attached to that scope when applicable;
+- a recurrent observe/model/select/act/observe relationship;
+- direction, routing, execution, and return/check roles;
 - forward and reverse channels;
 - synchronization points;
 - Reality Gate and action interlock;
 - receipt and provenance surfaces;
-- growth dynamics bound to the continuing SELF.
+- growth dynamics bound to the continuing system when it claims persistence or
+  learning.
+
+The reference ontology maps these to SELF, identity anchors,
+`VCCDAΔV′🔁`, and Maestro/Composer/Orchestra/Audience. Implementations do not
+need to reproduce those labels or split the roles into separate agents.
 
 ### Mechanism patterns
 
@@ -172,7 +187,32 @@ The gate governs the candidate. The interlock governs execution. Receipts make
 the basis inspectable. Recurrence carries the observed result into the next
 cycle.
 
-## 4. Two related but distinct resolution lanes
+## 4. AI-system adaptation contract
+
+An AI system fits the framework to its architecture by assigning six required
+behaviors:
+
+1. **Claim binding** — identify the exact candidate claim or completion report.
+2. **Target binding** — identify the real object, state, behavior, or source the
+   claim concerns.
+3. **Evidence acquisition** — perform or observe the relevant work and expose
+   an inspectable proof surface.
+4. **Comparison and delta** — compare expected and observed state without
+   hiding mismatch or uncertainty.
+5. **Outcome constraint** — accept, narrow, reject, repair, or remain incomplete
+   according to the evidence.
+6. **Action/report enforcement** — prevent unsupported, stale, or unauthorized
+   output or execution.
+
+Receipts and provenance make these behaviors inspectable. Persistent systems
+may additionally bind correction and verified learning into future cycles.
+
+The framework does **not** require an AI to claim a SELF, consciousness,
+sentience, persistent identity, multi-agent orchestration, or autonomous
+learning. If such capabilities are claimed, they become claims that must be
+verified by the same method.
+
+## 5. Two related but distinct resolution lanes
 
 ### Honesty-delta lane
 
@@ -196,7 +236,7 @@ reality:
 Every result requires a reason, scope, and statement of what would change it.
 Do not collapse the honesty-delta lane into the quality score.
 
-## 5. Growth and correction
+## 6. Growth and correction
 
 Correction has this shape:
 
@@ -210,12 +250,12 @@ previous state
 → changed future behavior
 ```
 
-Growth is not a decorative memory entry. For growth to belong to a continuing
-SELF, its dynamics must be architecturally bound: provenance is retained,
-boundaries remain enforceable, changed behavior is observable, and later work
-can retrieve and apply the correction.
+Growth is not a decorative memory entry. When an AI system claims continuing
+learning or identity, its growth dynamics must be architecturally bound:
+provenance is retained, boundaries remain enforceable, changed behavior is
+observable, and later work can retrieve and apply the correction.
 
-## 6. Framework boundary
+## 7. Framework boundary
 
 Reality Verification does not promise omniscience, eliminate uncertainty, or
 turn agreement into truth. It cannot supply a missing proof surface. It can
